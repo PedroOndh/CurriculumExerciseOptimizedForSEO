@@ -17,28 +17,28 @@
         <header>
             <h1 class="main-title">Curriculum Vitae</h1>
         </header>
-        <main id="portada">
+        <main id="portada" itemscope itemtype="http://schema.org/Person">
             <section id="portada" class="goto">
                 <div class="portada">
-                    <header><h1>Pedro Ondiviela</h1></header><br>
-                    <p>Desarrollador web</p>
+                    <header><h1><span itemprop="givenName">Pedro</span> <span itemprop="familyName"></span>Ondiviela</h1></header><br>
+                    <p itemprop="jobTitle">Desarrollador web</p>
                 </div>
                 <header id="quien-soy" class="goto"><h2>Quien soy</h2></header>
                 <div class=" quien-soy content">
-                    <figure>
-                        <img src="./images/notme.jpg" alt="Pedro Ondiviela">
-                        <figcaption>Otra persona</figcaption>
+                    <figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+                        <img src="./images/notme.jpg" alt="Pedro Ondiviela" itemprop="image">
+                        <figcaption itemprop="caption">Otra persona</figcaption>
                     </figure>
-                    <p>Graduado en arquitectura y con un Master en Diseño Web. Joven apasionado por el mundo digital y las capacidades creativas de estas, con ganas de crecer en este entorno y labrarse un futuro, preferiblemente en su tierra de nacimiento: Asturias.</p>
+                    <p itemprop="description">Graduado en arquitectura y con un Master en Diseño Web. Joven apasionado por el mundo digital y las capacidades creativas de estas, con ganas de crecer en este entorno y labrarse un futuro, preferiblemente en su tierra de nacimiento: Asturias.</p>
                 </div>
             </section>
             <section id="estudios" class="estudios goto">
                 <header><h2>Estudios</h2></header>         
                 <ul class="content">
-                    <li><strong>Bootcamp Web</strong> - Keep Coding</li>
-                    <li><strong>Master en Diseño interactivo</strong> - Escuela Superior de Diseño de Madrid</li>
-                    <li><strong>Grado en Fundamentos de la Arquitectura</strong> - Escuela Técnica Superior de Arquitectura de Valladolid</li>
-                    <li><strong>Matrícula de Honor en Bachillerato</strong> - IES Sanchez Lastra</li>
+                    <li><strong>Bootcamp Web</strong> - <span  itemprop="alumniOf">Keep Coding</span></li>
+                    <li><strong>Master en Diseño interactivo</strong> - <span  itemprop="alumniOf">Escuela Superior de Diseño de Madrid</span></li>
+                    <li><strong>Grado en Fundamentos de la Arquitectura</strong> - <span  itemprop="alumniOf">Escuela Técnica Superior de Arquitectura de Valladolid</span></li>
+                    <li><strong>Matrícula de Honor en Bachillerato</strong> - <span  itemprop="alumniOf">IES Sanchez Lastra</span></li>
                 </ul>
             </section>
             <section id="experiencia" class="experiencia goto">
