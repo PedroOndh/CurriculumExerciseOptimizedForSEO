@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Pedro Ondiviela">
+    <meta name="description" content="Curriculum de Pedro Ondiviela">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Curriculum - Ejercicio Mod HTML-CSS-JS</title>
+</head>
+<body>
+        <header>
+            <h1 class="main-title">Curriculum Vitae</h1>
+        </header>
+        <main id="portada">
+            <section id="portada" class="goto">
+                <div class="portada">
+                    <header><h1>Pedro Ondiviela</h1></header><br>
+                    <p>Desarrollador web</p>
+                </div>
+                <header id="quien-soy" class="goto"><h2>Quien soy</h2></header>
+                <div class=" quien-soy content">
+                    <figure>
+                        <img src="./images/notme.jpg" alt="Pedro Ondiviela">
+                        <figcaption>Otra persona</figcaption>
+                    </figure>
+                    <p>Graduado en arquitectura y con un Master en Diseño Web. Joven apasionado por el mundo digital y las capacidades creativas de estas, con ganas de crecer en este entorno y labrarse un futuro, preferiblemente en su tierra de nacimiento: Asturias.</p>
+                </div>
+            </section>
+            <section id="estudios" class="estudios goto">
+                <header><h2>Estudios</h2></header>         
+                <ul class="content">
+                    <li><strong>Bootcamp Web</strong> - Keep Coding</li>
+                    <li><strong>Master en Diseño interactivo</strong> - Escuela Superior de Diseño de Madrid</li>
+                    <li><strong>Grado en Fundamentos de la Arquitectura</strong> - Escuela Técnica Superior de Arquitectura de Valladolid</li>
+                    <li><strong>Matrícula de Honor en Bachillerato</strong> - IES Sanchez Lastra</li>
+                </ul>
+            </section>
+            <section id="experiencia" class="experiencia goto">
+                <header><h2>Experiencia</h2></header>         
+                <ul class="content">
+                    <li><strong>Desarrollador Web</strong> - Dil Se Estudio Creativo</li>
+                    <li><strong>Beca en Desarrollo Web</strong> - 3WAYS</li>
+                    <li><strong>Prácticas Curriculares en Arquitectura</strong> - Estudio de Arquitectura de Rogelio Ruíz y Macario Gonzalez</li>
+                </ul>
+            </section>
+            <section id="sobre-mi" class="sobre-mi goto">
+                <header><h2>Sobre mi</h2></header>  
+                <div class="content">
+                    <b>Mis aficiones son:</b>
+                    <ul>
+                        <li>Fotografia</li>
+                        <li>Ilustración</li>
+                        <li>Baile</li>
+                    </ul>
+                    <video controls>
+                        <source src="./video640.mp4" type="video/mp4">
+                    </video>
+        
+                </div>       
+            </section>
+            <section id="contacto" class="contacto goto">
+                <header><h2>Contáctame</h2></header>
+                <form action="" id="contact" class="content">
+                    <ul>
+                        <li class="form-group">
+                            <label for="name">Nombre *</label>
+                            <input type="text" name="name" id="name" placeholder="Nombre" required>
+                        </li>
+                        <li class="form-group">
+                            <label  for="email">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="E-mail">
+                        </li>
+                        <li class="form-group">
+                            <label for="selection">¿Cómo me has conocido?</label>
+                            <select name="selection" id="selection">
+                                <option value="linkedin">LinkedIn</option>
+                                <option value="infojobs">Infojobs</option>
+                                <option value="conocido">Un conocido</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                            <textarea name="selection-message" id="selection-other" cols="30" rows="5" placeholder="Detalla como me conociste"></textarea>
+                        </li>
+                        <li class="form-group">
+                            <label for="phone">Número de teléfono</label>
+                            <input type="tel" name="phone" id="phone" placeholder="Número">
+                        </li>
+                        <li class="form-group">
+                            <label  for="message">Mensaje</label>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        </li>
+                    </ul>
+                    <button class="boton" type="submit" id="send">ENVIAR</button>
+                </form>
+                <div id="error-message" class="error-message"></div>
+            </section>
+        </main>
+        <aside class="closed">
+            <div class="menu-title"><b>MENÚ</b><i class="fas fa-bars closed"></i><i class="fas fa-times opened"></i></div>
+            <nav>
+                <ul>
+                    <li class="active goto-portada active">PORTADA</li>
+                    <li class="goto-quien-soy">QUIEN SOY</li>
+                    <li class="goto-estudios">ESTUDIOS</li>
+                    <li class="goto-experiencia">EXPERIENCIA</li>
+                    <li class="goto-sobre-mi">SOBRE MI</li>
+                    <li class="goto-contacto">CONTACTO</li>
+                </ul>
+            </nav>
+        </aside>
+        <footer>
+            <div><address>pedro.ondiviela@gmail.com<br><br>
+            Pedro Ondiviela Hernando</address></div>
+        </footer>
+        <script src="./js/app.js" type="module"></script>
+</body>
+</html>
