@@ -5,22 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Pedro Ondiviela">
-    <meta name="description" content="Curriculum de Pedro Ondiviela">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Curriculum - Ejercicio Mod HTML-CSS-JS</title>
+    <title>Curriculum - Pedro Ondiviela</title>
 </head>
 <body>
-        <header>
-            <h1 class="main-title">Curriculum Vitae</h1>
-        </header>
         <main id="portada" itemscope itemtype="http://schema.org/Person">
             <section id="portada" class="goto">
                 <div class="portada">
-                    <header><h1><span itemprop="givenName">Pedro</span> <span itemprop="familyName"></span>Ondiviela</h1></header><br>
+                    <header><h1><span itemprop="givenName">Pedro</span> <span itemprop="familyName">Ondiviela</span></h1></header><br>
                     <p itemprop="jobTitle">Desarrollador web</p>
                 </div>
                 <header id="quien-soy" class="goto"><h2>Quien soy</h2></header>
@@ -35,28 +31,31 @@
             <section id="estudios" class="estudios goto">
                 <header><h2>Estudios</h2></header>         
                 <ul class="content">
-                    <li><strong>Bootcamp Web</strong> - <span  itemprop="alumniOf">Keep Coding</span></li>
-                    <li><strong>Master en Diseño interactivo</strong> - <span  itemprop="alumniOf">Escuela Superior de Diseño de Madrid</span></li>
-                    <li><strong>Grado en Fundamentos de la Arquitectura</strong> - <span  itemprop="alumniOf">Escuela Técnica Superior de Arquitectura de Valladolid</span></li>
-                    <li><strong>Matrícula de Honor en Bachillerato</strong> - <span  itemprop="alumniOf">IES Sanchez Lastra</span></li>
+                    <li><strong>Bootcamp Web</strong> - <span  itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization"><span itemprop="legalName">Keep Coding</span></span></li>
+                    <li><strong>Master en Diseño interactivo</strong> - <span  itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization"><span itemprop="legalName">Escuela Superior de Diseño de Madrid</span></span></li>
+                    <li><strong>Grado en Fundamentos de la Arquitectura</strong> - <span  itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization"><span itemprop="legalName">Escuela Técnica Superior de Arquitectura de Valladolid</span></span></li>
+                    <li><strong>Matrícula de Honor en Bachillerato</strong> - <span  itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization"><span itemprop="legalName">IES Sanchez Lastra</span></span></li>
                 </ul>
             </section>
             <section id="experiencia" class="experiencia goto">
                 <header><h2>Experiencia</h2></header>         
                 <ul class="content">
-                    <li><strong>Desarrollador Web</strong> - Dil Se Estudio Creativo</li>
+                    <li><strong itemprop="hasOccupation">Desarrollador Web</strong> - <span itemprop="worksFor" itemscope itemtype="http://schema.org/Organization"><span itemprop="legalName">Dil Se Estudio Creativo</span>, <span itemprop="address">Gijón</span></span></li>
                     <li><strong>Beca en Desarrollo Web</strong> - 3WAYS</li>
                     <li><strong>Prácticas Curriculares en Arquitectura</strong> - Estudio de Arquitectura de Rogelio Ruíz y Macario Gonzalez</li>
                 </ul>
             </section>
             <section id="sobre-mi" class="sobre-mi goto">
-                <header><h2>Sobre mi</h2></header>  
+                <header><h2>Habilidades</h2></header>  
                 <div class="content">
-                    <b>Mis aficiones son:</b>
+                    <b>Tengo conocimientos sobre:</b>
                     <ul>
-                        <li>Fotografia</li>
-                        <li>Ilustración</li>
-                        <li>Baile</li>
+                        <li itemprop="knowsAbout">Programación</li>
+                        <li itemprop="knowsAbout">Arquitectura</li>
+                        <li itemprop="knowsAbout">UX</li>
+                        <li itemprop="knowsAbout">Fotografia</li>
+                        <li itemprop="knowsAbout">Ilustración</li>
+                        <li itemprop="knowsAbout">Baile</li>
                     </ul>
                     <video controls>
                         <source src="./video640.mp4" type="video/mp4">
@@ -114,8 +113,8 @@
             </nav>
         </aside>
         <footer>
-            <div><address>pedro.ondiviela@gmail.com<br><br>
-            Pedro Ondiviela Hernando</address></div>
+            <div><address><span itemprop="email">pedro.ondiviela@gmail.com</span><br><br>
+            <span itemprop="givenName">Pedro</span> <span itemprop="familyName">Ondiviela</span></address></div>
         </footer>
         <script src="./js/app.js"></script>
 </body>
