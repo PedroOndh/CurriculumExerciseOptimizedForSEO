@@ -107,7 +107,7 @@ header .main-title {
     color: white;
 }
 
-.content {
+.content, .datos-personales.content {
     padding: 5% 15%;
 }
 
@@ -304,6 +304,10 @@ Media Queries
 
     .content {
         padding: 5% 20%;
+    }
+
+    .datos-personales.content {
+        padding: 1rem 30% 5%;
     }
 
     aside {
