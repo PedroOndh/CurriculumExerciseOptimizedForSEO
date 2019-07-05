@@ -111,6 +111,14 @@ header .main-title {
     padding: 5% 15%;
 }
 
+.datos-personales.content a {
+    color: black;
+}
+
+.datos-personales.content a:hover {
+    color: #ED364F;
+}
+
 address {
     word-break: break-all;
 }
